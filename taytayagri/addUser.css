@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'General Sans';
+  src: url('fonts/GeneralSans-Regular.woff2') format('woff2'),
+       url('fonts/GeneralSans-Regular.woff') format('woff'),
+       url('fonts/GeneralSans-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'General Sans-Bold';
+  src: url('fonts/GeneralSans-Bold.woff2') format('woff2'),
+       url('fonts/GeneralSans-Bold.woff') format('woff'),
+       url('fonts/GeneralSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'General Sans-Semibold';
+src: url('fonts/GeneralSans-Semibold.woff2') format('woff2'),
+     url('fonts/GeneralSans-Semibold.woff') format('woff'),
+     url('fonts/GeneralSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto';
+src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  max-width: 63%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vw !important;
+
+}
+
+.content{
+  padding: 3vw;
+  width: 100%;
+}
+
+.adduserbutton{
+    width: 240px;
+    height: 100px;
+    text-align: left;
+    display: inline-block;
+    
+}
+
+.content h1{
+  font-family: 'General Sans-semibold';
+  font-style: normal;
+  padding-bottom: 0vw;
+  font-size: 2.5vw;
+  color: #033296;
+}
+
+.forms{
+  padding-top: 1.5vw;
+  width: 100%;
+  height: auto;
+}
+
+.forms label{
+  font-family: 'General Sans-semibold';
+  font-style: normal;
+  font-size: 1.2vw;
+}
+
+.return-container{
+    max-width: 63%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5vw;
+  }
+#return-btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #033296;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+.forms input[type="text"]{
+  width: 97%;
+  height: 2.5vw;
+  margin-bottom: 1.7vw;
+
+  padding-left: 0.5vw;
+  border: 0.1vw solid black;
+  font-family: 'General Sans';
+  font-style: normal;
+  font-size: 1.5vw;
+}
+
+#submit-btn {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #D9D9D9;
+  font-family: 'General Sans-semibold';
+  font-style: normal;
+  font-size: 1.25vw;
+  /* identical to box height */
+  color: #000000;
+  cursor: pointer;
+  margin-top: 1vw;
+}
+
+#submit-btn:hover {
+  background-color: #adadad;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container{
+    margin-top: 120px;
+      max-width: 60%;
+  }
+
+  .content h1{
+      font-size: 1.5em;
+  }
+
+  .forms label{
+      font-size: 0.6em;
+    }
+
+  .forms input[type="text"]{
+      min-height: 25px;
+      margin-bottom: 1.7vw;
+
+      font-size: 12px;
+    }
+
+    #submit-btn {
+      min-height: 25px;
+      height: 100px
+
+    }
+
+    .redirect{
+      max-width: 60%;
+
+    }
+    
+    .redirect p{
+      padding: 1vw;
+      font-size: 0.6em;
+    }
+    
+}
+
+  @media only screen and (max-width: 1370px) {
+  .container{
+      margin-top: 130px;
+  }
+  
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+        margin-top: 120px;
+    }
+    
+    }
